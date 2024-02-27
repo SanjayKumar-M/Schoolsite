@@ -14,7 +14,7 @@ export default function AboutPage() {
       <div className="flex flex-col items-start justify-start w-full gap-[120px] bg-white-A700">
         <div className="flex flex-col items-center justify-start w-full gap-[54px]">
           <header className="flex flex-row justify-between items-center w-full p-[15px]">
-            <Img src="images/img_group_642.svg" alt="image" className="h-[50px] ml-[149px]" />
+          <Img src="https://freesvg.org/img/logo_school.png" alt="image" className="h-[50px] ml-[149px]" />
             <div className="flex flex-row justify-between items-start w-[30%] mr-[166px]">
               <Heading as="h6" className="text-center">
               <Link to="/" >
