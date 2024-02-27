@@ -4,6 +4,13 @@ import { Img, Heading, Text } from "../../components";
 import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
 import sanityClient from "@sanity/client";
+import imageUrlBuilder from '@sanity/image-url';
+
+const builder = imageUrlBuilder(sanityClient);
+
+function urlFor(source) {
+  return builder.image(source);
+}
 
 export default function WorksPage() {
   const [events, setEvents] = useState([]);
@@ -13,8 +20,8 @@ export default function WorksPage() {
     const client = sanityClient({
       projectId: "p8arx23b",
       dataset: "production",
-      useCdn: true, 
-      token:'sk0PV3jtDjF8riewBi0PkXXgJsxvR5z4zH7nWKgRKkRIuX4IfXqSIEdm3c0p4HEdtH4uwNFXD5nPgjqHR2ntyAc6MlGKUJAmOo0kPatuvbuvVsNjKvC8G6vrR7PtveUTdMop7kPt3FH8rYslAoFDdbCD3i3EtfQzJNUSdgV6lsN80bslaQks'
+      useCdn: true,
+      token: 'sk0PV3jtDjF8riewBi0PkXXgJsxvR5z4zH7nWKgRKkRIuX4IfXqSIEdm3c0p4HEdtH4uwNFXD5nPgjqHR2ntyAc6MlGKUJAmOo0kPatuvbuvVsNjKvC8G6vrR7PtveUTdMop7kPt3FH8rYslAoFDdbCD3i3EtfQzJNUSdgV6lsN80bslaQks'
     });
 
     // Fetch event documents
@@ -112,7 +119,7 @@ export default function WorksPage() {
                   <div key={event._id} className="flex flex-row justify-start w-full mx-auto max-w-[1180px]">
                     <div className="flex items-center justify-center w-[40%] relative mr-8">
                       <Img
-                         src={event.eventImage.asset._ref} 
+                        src={urlFor(event.eventImage.asset._ref).width(500).height(300).url()}
                         alt={event.eventName}
                         className="h-[482px] w-auto max-w-full object-cover rounded-[30px]"
                       />
