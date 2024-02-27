@@ -14,7 +14,7 @@ export default function HomepagePage() {
       <div className="flex flex-col items-start justify-start w-full gap-[70px] bg-white-A700 ">
         <div className="flex flex-col items-center justify-start w-full gap-[54px]">
           <header className="flex flex-row justify-between items-center w-full p-[15px]">
-            <Img src="images/img_group_642.svg" alt="image" className="h-[50px] ml-[149px]" />
+            <Img src="https://freesvg.org/img/logo_school.png" alt="image" className="h-[50px] ml-[149px]" />
             <div className="flex flex-row justify-between items-start w-[30%] mr-[166px]">
               <div className="flex flex-col items-center justify-start w-[12%] gap-2">
                 <Heading as="h6" className="!text-red-400_01 text-center">
@@ -45,10 +45,10 @@ export default function HomepagePage() {
             <div className="flex flex-col items-center justify-start w-full gap-[95px] max-w-[1181px]">
               <div className="h-[646px] w-full relative">
                 <div className="flex flex-col items-start justify-center w-full h-full pl-[71px] pr-14 gap-[39px] left-0 bottom-0 right-0 top-0 py-[71px] m-auto bg-cyan-50 absolute rounded-[35px]">
-                  <Text as="p" className="w-[42%] mt-[245px] ml-[3px] !text-black-900_60 !leading-[35px]">
+                  <Text as="p" className="w-[42%] mt-[245px] ml-[80px] !text-black-900_60 !leading-[35px]">
                     Get quality education from quality institute
                   </Text>
-                  <div className="flex flex-row justify-start mb-[83px] gap-6">
+                  <div className="flex flex-row justify-start mb-[83px]  ml-[83px] gap-6 ml">
                     <Button size="md" className="font-bold min-w-[201px] rounded-[5px]">
                       <Link to="/contact" >
                         Contact Us
@@ -66,13 +66,13 @@ export default function HomepagePage() {
                     <span className="text-black-900">Empowering Minds, </span>
                     <span className="text-red-400_01"> Building Tomorrow</span>
                   </Heading>
-                  <Img src="images/img_group_665.png" alt="image_one" className="w-1/2 ml-[-44px] object-cover" />
+                  <Img src="https://www.visualsstock.com/details_watermark.php?filename=55215" alt="image_one" className="ml-[-44px] object-cover w-96" />
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start w-full gap-[33px]">
                 <div className="flex flex-row justify-between items-start w-full">
                   <Heading size="4xl" as="h2">
-                    Meet our team
+                    Meet our Management
                   </Heading>
                   <a href="/" className="mt-[11px]">
                     <Heading size="lg" as="h3" className="!text-red-400_01 text-right">
@@ -82,13 +82,13 @@ export default function HomepagePage() {
                 </div>
                 <div className="flex flex-row w-full gap-[30px]">
                   <div className="flex flex-col items-center justify-start w-[32%] mb-1 gap-[39px]">
-                    <Img src="images/img_rectangle_16.png" alt="image" className="w-full object-cover rounded-[10px]" />
+                    <Img src="images/img_rectangle_15.png" alt="image" className="w-full object-cover rounded-[10px]" />
                     <div className="flex flex-col items-center justify-start w-[44%] gap-3">
                       <Heading size="xl" as="h4" className="!text-gray-800_01">
-                        Sarah Jae
+                        Elon Musk
                       </Heading>
                       <Text as="p" className="!text-black-900_68">
-                        Branding Specialist
+                        Director
                       </Text>
                     </div>
                   </div>
@@ -96,21 +96,21 @@ export default function HomepagePage() {
                     <Img src="images/img_rectangle_15.png" alt="image" className="w-full object-cover rounded-[10px]" />
                     <div className="flex flex-col items-center justify-start w-[39%] gap-3 py-1">
                       <Heading size="xl" as="h5" className="!text-gray-800_01">
-                        John Doe
+                        Jeff Bezos
                       </Heading>
                       <Text as="p" className="!text-black-900_68 text-center">
-                        Product Designer
+                        Principal
                       </Text>
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-start w-[32%] mb-[5px] gap-[39px]">
-                    <Img src="images/img_rectangle_17.png" alt="image" className="w-full object-cover rounded-[10px]" />
+                    <Img src="images/img_rectangle_15.png" alt="image" className="w-full object-cover rounded-[10px]" />
                     <div className="flex flex-col items-center justify-start w-[33%] gap-3">
                       <Heading size="xl" as="h6" className="!text-gray-800_01 text-center">
-                        Samantha
+                        Mukesh
                       </Heading>
                       <Text as="p" className="!text-black-900_68 text-center">
-                        SEO Specialist
+                        Vice Principal
                       </Text>
                     </div>
                   </div>
@@ -118,7 +118,7 @@ export default function HomepagePage() {
               </div>
               <div className="flex flex-col items-center justify-start w-full gap-[34px]">
                 <Heading size="4xl" as="h1">
-                  What we do
+                  Why your child study here
                 </Heading>
                 <div className="flex flex-row justify-center w-full px-14 py-28 bg-red-50 rounded-[90px]">
                   <div className="flex flex-row w-[85%] mb-1.5 gap-[102px] mx-[27px]">
@@ -128,10 +128,10 @@ export default function HomepagePage() {
                       </Button>
                       <div className="flex flex-col items-start justify-start w-full gap-[13px]">
                         <Heading size="xl" as="h4">
-                          UIUX Design
+                          First Academics
                         </Heading>
                         <Text size="xs" as="p" className="!leading-[30px]">
-                          We can make your website or application design better with this service
+                          Don't mug up learn by doing either physics or chemistry or even maths
                         </Text>
                       </div>
                     </div>
@@ -141,10 +141,10 @@ export default function HomepagePage() {
                       </Button>
                       <div className="flex flex-col items-start justify-start mb-2 gap-[15px]">
                         <Heading size="xl" as="h4">
-                          Website Dev
+                          Worldclass Infrastructure
                         </Heading>
                         <Text size="xs" as="p" className="!leading-[30px]">
-                          Make your business more leverage by having an optimal website and we are ready to help
+                          Don't mug up learn by doing either physics or chemistry or even maths
                         </Text>
                       </div>
                     </div>
@@ -154,11 +154,10 @@ export default function HomepagePage() {
                       </Button>
                       <div className="flex flex-col items-start justify-start w-full gap-[13px]">
                         <Heading size="xl" as="h4">
-                          Branding & Product
+                          Learn by doing
                         </Heading>
                         <Text size="xs" as="p" className="!leading-[30px]">
-                          we can also help you in the affairs of product branding so that your products can be more
-                          riveting
+                          Don't mug up learn by doing either physics or chemistry or even maths
                         </Text>
                       </div>
                     </div>
@@ -185,15 +184,14 @@ export default function HomepagePage() {
                   <div className="flex flex-col items-center justify-center w-max h-max gap-[61px] left-0 bottom-0 right-0 top-0 m-auto absolute">
                     <div className="flex flex-row justify-between items-start w-full">
                       <Heading size="4xl" as="h1">
-                        What our clients are saying
+                        Hear from our Parents
                       </Heading>
 
                     </div>
                     <div className="flex flex-row w-full gap-[30px]">
                       <div className="flex flex-col items-start justify-start w-[32%] gap-5 p-[30px] bg-white-A700 shadow-xl rounded-[10px]">
                         <Text size="s" as="p" className="w-[99%] ml-1.5">
-                          I am very satisfied with the work on the Nexus team. good service, satisfying work results and
-                          can also increase my business turnover. Thank you so much to the Nexus team.
+                          Best school with great teacher and facilities
                         </Text>
                         <div className="flex flex-row justify-start w-3/5 mb-[11px] ml-1.5 gap-[25px]">
                           <Img
@@ -203,7 +201,7 @@ export default function HomepagePage() {
                           />
                           <div className="flex flex-col items-start justify-start w-[61%] gap-1">
                             <Heading size="lg" as="h5" className="!font-semibold">
-                              John Richard
+                              Sanjay
                             </Heading>
                             <Text size="xs" as="p">
                               Businessman
@@ -213,8 +211,27 @@ export default function HomepagePage() {
                       </div>
                       <div className="flex flex-col items-start justify-start w-[32%] gap-5 p-[30px] bg-white-A700 shadow-xl rounded-[10px]">
                         <Text size="s" as="p" className="w-[99%] ml-1.5">
-                          since branding with the oracle team i feel my business has a very fast and good development,
-                          everything also always goes through a process of discussion that is really valid
+                          Best school with great teacher and facilities,
+                        </Text>
+                        <div className="flex flex-row justify-start w-3/5 mb-[11px] ml-1.5 gap-[25px]">
+                          <Img
+                            src="images/img_rectangle_52.png"
+                            alt="image"
+                            className="w-[49px] object-cover rounded-[12px]"
+                          />
+                          <div className="flex flex-col items-start justify-start w-[61%] gap-1">
+                            <Heading size="lg" as="h5" className="!font-semibold">
+                              Sanjay
+                            </Heading>
+                            <Text size="xs" as="p">
+                              Businessman
+                            </Text>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex flex-col items-start justify-start w-[32%] gap-5 p-[30px] bg-white-A700 shadow-xl rounded-[10px]">
+                        <Text size="s" as="p" className="w-[99%] ml-1.5">
+                          Best school with great teacher and facilities
                         </Text>
                         <div className="flex flex-row justify-start w-[63%] mb-[11px] ml-1.5 gap-6">
                           <Img
@@ -224,10 +241,10 @@ export default function HomepagePage() {
                           />
                           <div className="flex flex-col items-start justify-start w-[63%] gap-1">
                             <Heading size="lg" as="h5" className="!font-semibold">
-                              Andrew Smith
+                              Tate
                             </Heading>
                             <Text size="xs" as="p">
-                              Founder Ulala
+                              Banker
                             </Text>
                           </div>
                         </div>
