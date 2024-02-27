@@ -8,7 +8,7 @@ export default function Footer({ ...props }) {
         <div className="flex flex-row justify-between items-center w-full">
           <div className="flex flex-col items-start justify-start w-[70%] gap-1">
             <div className="flex flex-row justify-between items-start w-full">
-              <Img src="images/img_group_642_red_400.svg" alt="image_six" className="h-[50px]" />
+              <Img src="https://freesvg.org/img/logo_school.png" alt="image_six" className="h-[50px]" />
               <div className="flex flex-row justify-between items-center w-[47%] mt-[25px]">
                 <div className="flex flex-col items-center justify-start w-[29%]">
                   <div className="flex flex-col items-start justify-start w-full">
@@ -41,17 +41,15 @@ export default function Footer({ ...props }) {
                   </div>
                   <div className="flex flex-col items-start justify-start gap-[30px]">
                     <Heading as="h6" className="!text-white-A700 tracking-[0.90px] !font-semibold cursor-pointer">
-                      Dribbble
+                      Facebook
                     </Heading>
                     <Heading as="h6" className="!text-white-A700 tracking-[0.90px] !font-semibold cursor-pointer">
                       Instagram
                     </Heading>
                     <Heading as="h6" className="!text-white-A700 tracking-[0.90px] !font-semibold cursor-pointer">
-                      Behance
+                      Twitter
                     </Heading>
-                    <Heading as="h6" className="!text-white-A700 tracking-[0.90px] !font-semibold cursor-pointer">
-                      Pinterest
-                    </Heading>
+                    
                   </div>
                 </div>
               </div>

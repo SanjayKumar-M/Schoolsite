@@ -211,7 +211,7 @@ export default function HomepagePage() {
                       </div>
                       <div className="flex flex-col items-start justify-start w-[32%] gap-5 p-[30px] bg-white-A700 shadow-xl rounded-[10px]">
                         <Text size="s" as="p" className="w-[99%] ml-1.5">
-                          Best school with great teacher and facilities,
+                          Best school with great teacher and facilities
                         </Text>
                         <div className="flex flex-row justify-start w-3/5 mb-[11px] ml-1.5 gap-[25px]">
                           <Img

@@ -13,7 +13,7 @@ export default function WorksPage() {
       <div className="flex flex-col items-start justify-start w-full bg-white-A700">
         <div className="flex flex-col items-center justify-start w-full">
           <header className="flex flex-row justify-between items-center w-full p-[15px]">
-          <Img src="https://freesvg.org/img/logo_school.png" alt="image" className="h-[50px] ml-[149px]" />
+          <Img src="https://freesvg.org/img/logo_school.png" alt="image" className="h-[60px] ml-[149px]" />
             <div className="flex flex-row justify-between items-start w-[30%] mr-[166px]">
               <Heading as="h6" className="text-center">
               <Link to="/" >
@@ -60,13 +60,12 @@ export default function WorksPage() {
                   <div className="h-3.5 w-3.5 mt-[49px] bg-light_blue-400 rounded-[50%]" />
                   <div className="flex flex-col items-end justify-start w-[93%] gap-[75px]">
                     <Heading size="5xl" as="h1" className="mr-[232px] text-center">
-                      <span className="text-black-900">What we </span>
-                      <span className="text-red-400_01">do</span>
+                      <span className="text-black-900">What gonna </span>
+                      <span className="text-red-400_01">Happen</span>
                       <span className="text-black-900"></span>
                     </Heading>
                     <Text as="p" className="text-center !leading-10">
-                      We have completed many projects from various companies in the world, we have made many of our
-                      clients feel happy and satisfied with the results we have provided
+                      Christmas or Pongal! For every special day something will be there in our school either program or event or even free gifts
                     </Text>
                   </div>
                 </div>
@@ -86,11 +85,9 @@ export default function WorksPage() {
             <div className="flex flex-col items-start justify-start w-full gap-11">
               <div className="flex flex-row justify-between items-start w-[59%]">
                 <Heading size="4xl" as="h2">
-                  Latest Project
+                  Upcoming Events
                 </Heading>
-                <Text as="p" className="mt-2.5">
-                  this is the last variety of projects we have worked on
-                </Text>
+                
               </div>
               <div className="flex flex-col items-start justify-start w-full gap-[105px]">
                 <div className="flex flex-row justify-start w-full mx-auto max-w-[1180px]">

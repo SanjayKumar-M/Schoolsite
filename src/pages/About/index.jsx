@@ -14,28 +14,28 @@ export default function AboutPage() {
       <div className="flex flex-col items-start justify-start w-full gap-[120px] bg-white-A700">
         <div className="flex flex-col items-center justify-start w-full gap-[54px]">
           <header className="flex flex-row justify-between items-center w-full p-[15px]">
-          <Img src="https://freesvg.org/img/logo_school.png" alt="image" className="h-[50px] ml-[149px]" />
+            <Img src="https://freesvg.org/img/logo_school.png" alt="image" className="h-[50px] ml-[149px]" />
             <div className="flex flex-row justify-between items-start w-[30%] mr-[166px]">
               <Heading as="h6" className="text-center">
-              <Link to="/" >
+                <Link to="/" >
                   Home
                 </Link>
               </Heading>
               <div className="flex flex-col items-center justify-start w-[12%] gap-2">
                 <Heading as="h6" className="!text-red-400_01 text-center">
-                <Link to="/about" >
-                  About
-                </Link>
+                  <Link to="/about" >
+                    About
+                  </Link>
                 </Heading>
                 <div className="h-1.5 w-1.5 bg-red-400_01 rounded-[50%]" />
               </div>
               <Heading as="h6" className="text-center">
-              <Link to="/works" >
+                <Link to="/works" >
                   Events
                 </Link>
               </Heading>
               <Heading as="h6" className="text-center">
-              <Link to="/contact" >
+                <Link to="/contact" >
                   Contact
                 </Link>
               </Heading>
@@ -55,11 +55,10 @@ export default function AboutPage() {
                       <div className="flex flex-col items-center justify-start w-[91%] gap-[15px] z-[1]">
                         <Heading size="5xl" as="h1" className="w-[66%] text-center leading-[60px]">
                           <span className="text-black-900">Get to know more </span>
-                          <span className="text-red-400_01">about us</span>
+                          <span className="text-red-400_01">about our Teachers</span>
                         </Heading>
                         <Text as="p" className="text-center !leading-10">
-                          We are an agency engaged in the creative industry and business, we are ready to help you to
-                          improve your business performance together with our great team
+                          Our staffs are not only experienced but also friendly with our students, their unique style of teaching creates a difference
                         </Text>
                       </div>
                       <Img
@@ -79,13 +78,13 @@ export default function AboutPage() {
             </div>
             <div className="justify-center w-full gap-[30px] grid-cols-3 grid min-h-[auto]">
               <div className="flex flex-col items-center justify-start w-full gap-[39px]">
-                <Img src="images/img_rectangle_16.png" alt="image" className="w-full object-cover rounded-[10px]" />
+                <Img src="images/img_rectangle_15.png" alt="image" className="w-full object-cover rounded-[10px]" />
                 <div className="flex flex-col items-center justify-start w-[44%] gap-3">
                   <Heading size="xl" as="h2" className="!text-gray-800_01">
-                    Sarah Jae
+                    Elon Musk
                   </Heading>
                   <Text as="p" className="!text-black-900_68">
-                    Branding Specialist
+                    Tamil
                   </Text>
                 </div>
               </div>
@@ -93,87 +92,87 @@ export default function AboutPage() {
                 <Img src="images/img_rectangle_15.png" alt="image" className="w-full object-cover rounded-[10px]" />
                 <div className="flex flex-col items-center justify-start w-[39%] gap-3 py-1">
                   <Heading size="xl" as="h3" className="!text-gray-800_01">
-                    John Doe
+                    Elon Musk
                   </Heading>
                   <Text as="p" className="!text-black-900_68 text-center">
-                    Product Designer
+                    English
                   </Text>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start w-full gap-[39px]">
-                <Img src="images/img_rectangle_17.png" alt="image" className="w-full object-cover rounded-[10px]" />
+                <Img src="images/img_rectangle_15.png" alt="image" className="w-full object-cover rounded-[10px]" />
                 <div className="flex flex-col items-center justify-start w-[33%] gap-3">
                   <Heading size="xl" as="h4" className="!text-gray-800_01 text-center">
-                    Samantha
+                    Elon Musk
                   </Heading>
                   <Text as="p" className="!text-black-900_68 text-center">
-                    SEO Specialist
+                    Maths
                   </Text>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start w-full gap-9">
-                <Img src="images/img_rectangle_18.png" alt="image" className="w-full object-cover rounded-[10px]" />
+                <Img src="images/img_rectangle_15.png" alt="image" className="w-full object-cover rounded-[10px]" />
                 <div className="flex flex-col items-center justify-start w-[44%] gap-[7px]">
                   <Heading size="2xl" as="h5">
-                    Lila laconsia
+                    Elon Musk
                   </Heading>
                   <Text size="lg" as="p" className="!text-black-900_68 text-center">
-                    UI Designer
+                    Science
                   </Text>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start w-full gap-9">
-                <Img src="images/img_rectangle_19.png" alt="image" className="w-full object-cover rounded-[10px]" />
+                <Img src="images/img_rectangle_15.png" alt="image" className="w-full object-cover rounded-[10px]" />
                 <div className="flex flex-col items-center justify-start w-[39%] gap-1">
                   <Heading size="2xl" as="h6" className="text-center">
-                    Ana louren
+                    Elon Musk
                   </Heading>
                   <Text size="lg" as="p" className="!text-black-900_68 text-center">
-                    Illustrator
+                    Computer Science
                   </Text>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start w-full gap-[39px]">
-                <Img src="images/img_rectangle_20.png" alt="image" className="w-full object-cover rounded-[10px]" />
+                <Img src="images/img_rectangle_15.png" alt="image" className="w-full object-cover rounded-[10px]" />
                 <div className="flex flex-col items-center justify-start w-[37%] gap-1">
                   <Heading size="2xl" as="h3" className="text-center">
-                    Rico john
+                    Elon Musk
                   </Heading>
                   <Text size="lg" as="p" className="!text-black-900_68 text-center">
-                    UX Principles
+                    Biology
                   </Text>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start w-full gap-[39px]">
-                <Img src="images/img_rectangle_21.png" alt="image" className="w-full object-cover rounded-[10px]" />
+                <Img src="images/img_rectangle_15.png" alt="image" className="w-full object-cover rounded-[10px]" />
                 <div className="flex flex-col items-center justify-start w-[57%] gap-1">
                   <Heading size="2xl" as="h3">
-                    Randy okla
+                    Elon Musk
                   </Heading>
                   <Text size="lg" as="p" className="!text-black-900_68 text-center">
-                    Interaction Designer
+                    Social Science
                   </Text>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start w-full gap-9">
-                <Img src="images/img_rectangle_22.png" alt="image" className="w-full object-cover rounded-[10px]" />
+                <Img src="images/img_rectangle_15.png" alt="image" className="w-full object-cover rounded-[10px]" />
                 <div className="flex flex-col items-center justify-start w-[46%] gap-[5px]">
                   <Heading size="2xl" as="h3">
-                    Sinta Marcus
+                    Elon Musk
                   </Heading>
                   <Text size="lg" as="p" className="!text-black-900_68 text-center">
-                    UX Writer
+                    Physical Education
                   </Text>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start w-full gap-9">
-                <Img src="images/img_rectangle_23.png" alt="image" className="w-full object-cover rounded-[10px]" />
+                <Img src="images/img_rectangle_15.png" alt="image" className="w-full object-cover rounded-[10px]" />
                 <div className="flex flex-col items-center justify-start w-2/5 gap-1">
                   <Heading size="2xl" as="h3" className="text-center">
-                    Sam Rivald
+                    Elon Musk
                   </Heading>
                   <Text size="lg" as="p" className="!text-black-900_68 text-center">
-                    Front-end Dev
+                    Musician
                   </Text>
                 </div>
               </div>
