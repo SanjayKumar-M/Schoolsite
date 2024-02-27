@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Text, Heading, Img, Button } from "../../components";
 import Footer from "../../components/Footer";
+import { Link } from "react-router-dom";
 
 export default function HomepagePage() {
   return (
@@ -17,18 +18,26 @@ export default function HomepagePage() {
             <div className="flex flex-row justify-between items-start w-[30%] mr-[166px]">
               <div className="flex flex-col items-center justify-start w-[12%] gap-2">
                 <Heading as="h6" className="!text-red-400_01 text-center">
-                  Home
+                  <Link to="/home" >
+                    Home
+                  </Link>
                 </Heading>
                 <div className="h-1.5 w-1.5 bg-red-400_01 rounded-[50%]" />
               </div>
               <Heading as="h6" className="text-center">
-                About
+                <Link to="/about" >
+                  About
+                </Link>
               </Heading>
               <Heading as="h6" className="text-center">
-                Works
+                <Link to="/workd" >
+                  Events
+                </Link>
               </Heading>
               <Heading as="h6" className="text-center">
-                Contact
+                <Link to="/contact" >
+                  Contact
+                </Link>
               </Heading>
             </div>
           </header>

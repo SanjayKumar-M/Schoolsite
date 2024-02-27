@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Img, Heading, Text } from "../../components";
 import Footer from "../../components/Footer";
+import { Link } from "react-router-dom";
 
 export default function AboutPage() {
   return (
@@ -16,19 +17,27 @@ export default function AboutPage() {
             <Img src="images/img_group_642.svg" alt="image" className="h-[50px] ml-[149px]" />
             <div className="flex flex-row justify-between items-start w-[30%] mr-[166px]">
               <Heading as="h6" className="text-center">
-                Home
+              <Link to="/" >
+                  Home
+                </Link>
               </Heading>
               <div className="flex flex-col items-center justify-start w-[12%] gap-2">
                 <Heading as="h6" className="!text-red-400_01 text-center">
+                <Link to="/about" >
                   About
+                </Link>
                 </Heading>
                 <div className="h-1.5 w-1.5 bg-red-400_01 rounded-[50%]" />
               </div>
               <Heading as="h6" className="text-center">
-                Works
+              <Link to="/works" >
+                  Events
+                </Link>
               </Heading>
               <Heading as="h6" className="text-center">
-                Contact
+              <Link to="/contact" >
+                  Contact
+                </Link>
               </Heading>
             </div>
           </header>
