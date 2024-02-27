@@ -70,7 +70,7 @@ export default function HomepagePage() {
                   <Heading size="4xl" as="h2">
                     Meet our team
                   </Heading>
-                  <a href="#" className="mt-[11px]">
+                  <a href="/" className="mt-[11px]">
                     <Heading size="lg" as="h3" className="!text-red-400_01 text-right">
                       View All
                     </Heading>
