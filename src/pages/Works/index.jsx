@@ -13,31 +13,31 @@ export default function WorksPage() {
       <div className="flex flex-col items-start justify-start w-full bg-white-A700">
         <div className="flex flex-col items-center justify-start w-full">
           <header className="flex flex-row justify-between items-center w-full p-[15px]">
-          <Img src="https://freesvg.org/img/logo_school.png" alt="image" className="h-[60px] ml-[149px]" />
+            <Img src="https://freesvg.org/img/logo_school.png" alt="image" className="h-[60px] ml-[149px]" />
             <div className="flex flex-row justify-between items-start w-[30%] mr-[166px]">
               <Heading as="h6" className="text-center">
-              <Link to="/" >
+                <Link to="/" >
                   Home
                 </Link>
               </Heading>
               <div className="flex flex-col items-center justify-start w-[12%] gap-2">
-              <Heading as="h6" className="text-center">
-                <Link to="/about" >
-                  About
-                </Link>
+                <Heading as="h6" className="text-center">
+                  <Link to="/about" >
+                    About
+                  </Link>
                 </Heading>
                 <div className="h-1.5 w-1.5 bg-red-400_01 rounded-[50%]" />
               </div>
               <div className="flex flex-col items-center justify-start w-[12%] gap-2">
                 <Heading as="h6" className="!text-red-400_01 text-center">
-                <Link to="/works" >
-                  Events
-                </Link>
+                  <Link to="/works" >
+                    Events
+                  </Link>
                 </Heading>
                 <div className="h-1.5 w-1.5 bg-red-400_01 rounded-[50%]" />
               </div>
               <Heading as="h6" className="text-center">
-              <Link to="/contact" >
+                <Link to="/contact" >
                   Contact
                 </Link>
               </Heading>
@@ -83,83 +83,71 @@ export default function WorksPage() {
               </div>
             </div>
             <div className="flex flex-col items-start justify-start w-full gap-11">
-              <div className="flex flex-row justify-between items-start w-[59%]">
+              <div className="flex flex-row justify-between items-start w-full">
                 <Heading size="4xl" as="h2">
                   Upcoming Events
                 </Heading>
-                
               </div>
               <div className="flex flex-col items-start justify-start w-full gap-[105px]">
+                {/* First Event */}
                 <div className="flex flex-row justify-start w-full mx-auto max-w-[1180px]">
-                  <div className="h-[527px] w-full relative">
+                  <div className="flex items-center justify-center w-[40%] relative mr-8">
                     <Img
                       src="images/img_group_21.png"
                       alt="image_three"
-                      className="h-[482px] w-[67%] bottom-0 right-0 m-auto object-cover absolute"
+                      className="h-[482px] w-auto max-w-full object-cover rounded-[30px]"
                     />
-                    <div className="h-[496px] w-full top-0 right-0 left-0 m-auto absolute">
-                      <div className="flex flex-col items-start justify-center w-full h-full gap-[328px] left-0 bottom-0 right-0 top-0 p-11 m-auto bg-orange-A200 absolute rounded-[30px]">
-                        <Heading size="3xl" as="h3" className="ml-14 !text-white-A700 !font-nunito !font-extrabold">
-                          Foodie.
-                        </Heading>
-                        <div className="h-0.5 w-[7%] mb-7 ml-14 bg-white-A700" />
-                      </div>
-                      <Heading
-                        size="3xl"
-                        as="h4"
-                        className="w-[26%] bottom-[29%] left-[9%] m-auto !text-white-A700 absolute"
-                      >
-                        Launching website for Apps
-                      </Heading>
-                    </div>
+                  </div>
+                  <div className="flex flex-col justify-center w-[60%] p-10 bg-orange-A200 rounded-[30px]">
+                    <Heading size="3xl" as="h3" className="text-white-A700 font-nunito font-extrabold mb-4">
+                      Foodie.
+                    </Heading>
+                    <Text as="p" className="text-white-A700">
+                      Launching website for Apps
+                    </Text>
                   </div>
                 </div>
-                <div className="h-[580px] w-full relative">
-                  <Img
-                    src="images/img_group_790.png"
-                    alt="image_four"
-                    className="h-[456px] w-[57%] right-0 top-[7%] m-auto object-cover absolute"
-                  />
-                  <div className="flex flex-row justify-start w-[95%] h-full left-0 bottom-0 top-0 m-auto absolute">
-                    <div className="flex flex-col items-start justify-center w-full pl-[63px] pr-14 py-[63px] bg-indigo-800 rounded-[30px]">
-                      <Heading size="3xl" as="h5" className="ml-[38px] !text-transparent bg-gradient bg-clip-text">
-                        Floops
-                      </Heading>
-                      <Heading size="3xl" as="h6" className="w-[29%] mt-[190px] ml-[38px] !text-white-A700">
-                        Landing page for Website Service
-                      </Heading>
-                      <div className="h-0.5 w-[7%] mt-[68px] mb-[17px] ml-[38px] bg-white-A700" />
-                    </div>
+
+                {/* Second Event */}
+                <div className="flex flex-row justify-start w-full mx-auto max-w-[1180px]">
+                  <div className="flex flex-col justify-center w-[60%] p-10 bg-indigo-800 rounded-[30px]">
+                    <Heading size="3xl" as="h3" className="text-transparent bg-gradient bg-clip-text mb-4">
+                      Floops
+                    </Heading>
+                    <Text as="p" className="text-white-A700">
+                      Landing page for Website Service
+                    </Text>
                   </div>
-                </div>
-                <div className="flex flex-row justify-start w-full mx-auto max-w-[1181px]">
-                  <div className="h-[580px] w-full bg-red-A200 relative rounded-[30px]">
-                    <div className="flex flex-row justify-between items-center w-[92%] h-full right-0 bottom-0 top-0 m-auto absolute">
-                      <div className="flex flex-col items-start justify-start w-[28%]">
-                        <div className="flex flex-row justify-start items-center gap-4">
-                          <Img src="images/img_group_51_1.png" alt="image_five" className="w-[31%] object-cover" />
-                          <Img src="images/img_insight.svg" alt="insight_one" className="h-8" />
-                        </div>
-                        <Heading size="3xl" as="h2" className="mt-[173px] !text-white-A700">
-                          Website for creative agency
-                        </Heading>
-                        <div className="h-0.5 w-[24%] mt-[68px] bg-white-A700" />
-                      </div>
-                      <Img
-                        src="images/img_web_1920_2_1.png"
-                        alt="web19202one_one"
-                        className="w-[35%] object-cover rounded-[30px]"
-                      />
-                    </div>
+                  <div className="flex items-center justify-center w-[40%] relative ml-8">
                     <Img
-                      src="images/img_web_1920_2_1_580x1181.png"
-                      alt="web19202one"
-                      className="justify-center h-[580px] w-full left-0 bottom-0 right-0 top-0 m-auto object-cover absolute rounded-[30px]"
+                      src="images/img_group_790.png"
+                      alt="image_four"
+                      className="h-[456px] w-auto max-w-full object-cover rounded-[30px]"
                     />
+                  </div>
+                </div>
+
+                {/* Third Event */}
+                <div className="flex flex-row justify-start w-full mx-auto max-w-[1180px]">
+                  <div className="flex items-center justify-center w-[40%] relative mr-8">
+                    <Img
+                      src="images/img_web_1920_2_1.png"
+                      alt="web19202one_one"
+                      className="h-[456px] w-auto max-w-full object-cover rounded-[30px]"
+                    />
+                  </div>
+                  <div className="flex flex-col justify-center w-[60%] p-10 bg-red-A200 rounded-[30px]">
+                    <Heading size="3xl" as="h3" className="text-white-A700 font-nunito font-extrabold mb-4">
+                      Website for creative agency
+                    </Heading>
+                    <Text as="p" className="text-white-A700">
+                      Description of the event goes here.
+                    </Text>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
         <Footer className="flex justify-center items-center w-full mt-[110px] pt-[47px] px-[47px] rounded-tr-[50px] bg-gray-800" />
