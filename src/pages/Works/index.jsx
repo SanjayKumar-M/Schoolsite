@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Img, Heading, Text } from "../../components";
 import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
+import sanityClient from "@sanity/client";
 
 export default function WorksPage() {
+  const [events, setEvents] = useState([]);
+
+  // Fetch events from Sanity
+  useEffect(() => {
+    const client = sanityClient({
+      projectId: "p8arx23b",
+      dataset: "production",
+      useCdn: true, 
+      token:'sk0PV3jtDjF8riewBi0PkXXgJsxvR5z4zH7nWKgRKkRIuX4IfXqSIEdm3c0p4HEdtH4uwNFXD5nPgjqHR2ntyAc6MlGKUJAmOo0kPatuvbuvVsNjKvC8G6vrR7PtveUTdMop7kPt3FH8rYslAoFDdbCD3i3EtfQzJNUSdgV6lsN80bslaQks'
+    });
+
+    // Fetch event documents
+    client.fetch('*[_type == "event"]').then((data) => {
+      setEvents(data);
+    });
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -90,62 +108,25 @@ export default function WorksPage() {
                 </Heading>
               </div>
               <div className="flex flex-col items-start justify-start w-full gap-[105px]">
-                {/* First Event */}
-                <div className="flex flex-row justify-start w-full mx-auto max-w-[1180px]">
-                  <div className="flex items-center justify-center w-[40%] relative mr-8">
-                    <Img
-                      src="images/img_group_21.png"
-                      alt="image_three"
-                      className="h-[482px] w-auto max-w-full object-cover rounded-[30px]"
-                    />
+                {events.map((event) => (
+                  <div key={event._id} className="flex flex-row justify-start w-full mx-auto max-w-[1180px]">
+                    <div className="flex items-center justify-center w-[40%] relative mr-8">
+                      <Img
+                         src={event.eventImage.asset._ref} 
+                        alt={event.eventName}
+                        className="h-[482px] w-auto max-w-full object-cover rounded-[30px]"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-center w-[60%] p-10 bg-orange-A200 rounded-[30px]">
+                      <Heading size="3xl" as="h3" className="text-white-A700 font-nunito font-extrabold mb-4">
+                        {event.eventName}
+                      </Heading>
+                      <Text as="p" className="text-white-A700">
+                        {event.eventDescription}
+                      </Text>
+                    </div>
                   </div>
-                  <div className="flex flex-col justify-center w-[60%] p-10 bg-orange-A200 rounded-[30px]">
-                    <Heading size="3xl" as="h3" className="text-white-A700 font-nunito font-extrabold mb-4">
-                      Foodie.
-                    </Heading>
-                    <Text as="p" className="text-white-A700">
-                      Launching website for Apps
-                    </Text>
-                  </div>
-                </div>
-
-                {/* Second Event */}
-                <div className="flex flex-row justify-start w-full mx-auto max-w-[1180px]">
-                  <div className="flex flex-col justify-center w-[60%] p-10 bg-indigo-800 rounded-[30px]">
-                    <Heading size="3xl" as="h3" className="text-transparent bg-gradient bg-clip-text mb-4">
-                      Floops
-                    </Heading>
-                    <Text as="p" className="text-white-A700">
-                      Landing page for Website Service
-                    </Text>
-                  </div>
-                  <div className="flex items-center justify-center w-[40%] relative ml-8">
-                    <Img
-                      src="images/img_group_790.png"
-                      alt="image_four"
-                      className="h-[456px] w-auto max-w-full object-cover rounded-[30px]"
-                    />
-                  </div>
-                </div>
-
-                {/* Third Event */}
-                <div className="flex flex-row justify-start w-full mx-auto max-w-[1180px]">
-                  <div className="flex items-center justify-center w-[40%] relative mr-8">
-                    <Img
-                      src="images/img_web_1920_2_1.png"
-                      alt="web19202one_one"
-                      className="h-[456px] w-auto max-w-full object-cover rounded-[30px]"
-                    />
-                  </div>
-                  <div className="flex flex-col justify-center w-[60%] p-10 bg-red-A200 rounded-[30px]">
-                    <Heading size="3xl" as="h3" className="text-white-A700 font-nunito font-extrabold mb-4">
-                      Website for creative agency
-                    </Heading>
-                    <Text as="p" className="text-white-A700">
-                      Description of the event goes here.
-                    </Text>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
 
